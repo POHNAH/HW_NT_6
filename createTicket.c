@@ -1,4 +1,4 @@
-creatTicket()
+createTicket()
 {
 	int randomNumber = rand()%2;
 

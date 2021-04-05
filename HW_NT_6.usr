@@ -24,8 +24,9 @@ Description=
 ScriptLocale=ru-RU
 [Actions]
 vuser_init=vuser_init.c
-creatTicket=creatTicket.c
-ticketCheck=ticketCheck.c
+createTicket=createTicket.c
+logic=logic.c
+toItinerary=toItinerary.c
 vuser_end=vuser_end.c
 [RunLogicFiles]
 Default Profile=default.usp
@@ -37,28 +38,37 @@ Default Profile=default.cfg
 globals.h=
 [Modified Actions]
 vuser_init=1
-creatTicket=1
-ticketCheck=1
+createTicket=1
+logic=1
+toItinerary=1
 vuser_end=1
 [Recorded Actions]
 vuser_init=0
-creatTicket=1
-ticketCheck=0
+createTicket=1
+logic=0
+toItinerary=0
 vuser_end=0
 [Replayed Actions]
 vuser_init=1
-creatTicket=1
-ticketCheck=1
+createTicket=1
+logic=0
+toItinerary=0
 vuser_end=1
 [Interpreters]
 vuser_init=cci
-creatTicket=cci
-ticketCheck=cci
+createTicket=cci
+logic=cci
+toItinerary=cci
 vuser_end=cci
 [TransactionsOrder]
-Order=
+Order="enter__*delimiter*__createTicket__*delimiter*__toItinerary__*delimiter*__exit"
 [StateManagement]
 LastReplayStatus=1
 [ActiveReplay]
 LastReplayedRunName=result1
 ActiveRunName=result1
+[Transactions]
+enter=
+createTicket=
+toItinerary=
+exit=
