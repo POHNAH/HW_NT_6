@@ -23,12 +23,22 @@
     <FileEntry Name="ScriptVcsSettings.xml" Filter="2" />
     <FileEntry Name="Watches.xml" Filter="2" />
     <FileEntry Name="seat.dat" Filter="2" />
+    <FileEntry Name="combined_HW_NT_6.c" Filter="2" />
+    <FileEntry Name="pre_cci.c" Filter="2" />
     <FileEntry Name=".gitignore" Filter="1" />
+    <FileEntry Name="102174915440.idx" Filter="1" />
+    <FileEntry Name="111880592440.idx" Filter="1" />
+    <FileEntry Name="186030070440.idx" Filter="1" />
+    <FileEntry Name="236065003440.idx" Filter="1" />
+    <FileEntry Name="63942740440.idx" Filter="1" />
+    <FileEntry Name="93537429440.idx" Filter="1" />
     <FileEntry Name="Bookmarks.xml" Filter="1" />
     <FileEntry Name="Breakpoints.xml" Filter="1" />
     <FileEntry Name="CompilerLogMetadata.xml" Filter="1" />
     <FileEntry Name="data.zip" Filter="1" />
     <FileEntry Name="date.dat" Filter="1" />
+    <FileEntry Name="HW_NT_6.c.pickle" Filter="1" />
+    <FileEntry Name="HW_NT_6.ci" Filter="1" />
     <FileEntry Name="HW_NT_6.prm.bak" Filter="1" />
     <FileEntry Name="logfile.log" Filter="1" />
     <FileEntry Name="mdrv.log" Filter="1" />

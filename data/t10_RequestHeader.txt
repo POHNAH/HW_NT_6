@@ -1,8 +1,13 @@
-POST /api/browser/edge/actions HTTP/1.1
+POST /cgi-bin/login.pl HTTP/1.1
+Accept: text/html, application/xhtml+xml, image/jxr, */*
+Referer: http://localhost:1080/cgi-bin/nav.pl?in=home
+Accept-Language: ru-RU
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko
+Content-Type: application/x-www-form-urlencoded
+Accept-Encoding: gzip, deflate
+Host: localhost:1080
+Content-Length: 121
 Connection: Keep-Alive
-Content-Type: application/json
-Authorization: SmartScreenHash eyJhdXRoSWQiOiIzODFkZGQxZS1lNjAwLTQyZGUtOTRlZC04YzM0YmY3M2YxNmQiLCJoYXNoIjoiQVh6QWNQUE01a289Iiwia2V5IjoiL2d1WS9qSDRMb1ZzRjA2WmNrMEN3dz09In0=
-User-Agent: SmartScreen/281479403536385
-Content-Length: 1326
-Host: nav.smartscreen.microsoft.com
+Cache-Control: no-cache
+Cookie: MSO=SID&1617929351&MSO_ServerErrorsProb&50&MSO_ServerLoadProb&50
 

@@ -1,32 +1,161 @@
 [
     {
-        "actionName": "creatTicket",
+        "actionName": "logic",
         "steps": [
             {
+                "stepId": "STEP1",
+                "stepName": "Url: webtours",
+                "infFile": "t1.inf",
+                "time": 1617930026449
+            },
+            {
+                "stepId": "STEP2",
+                "stepName": "Custom Request: InfluxDB",
+                "infFile": "t2.inf",
+                "time": 1617930026477
+            },
+            {
                 "stepId": "STEP3",
-                "stepName": "Url: welcome.pl",
+                "stepName": "Submit Data: login.pl",
                 "infFile": "t3.inf",
-                "time": 1617540058838
+                "time": 1617930030793
             },
             {
                 "stepId": "STEP4",
-                "stepName": "Submit Form: reservations.pl",
+                "stepName": "Custom Request: InfluxDB",
                 "infFile": "t4.inf",
-                "time": 1617540059323
+                "time": 1617930030816
             },
             {
                 "stepId": "STEP5",
-                "stepName": "Submit Form: reservations.pl_2",
+                "stepName": "Url: welcome.pl",
                 "infFile": "t5.inf",
-                "time": 1617540059690
+                "time": 1617930035183
             },
             {
                 "stepId": "STEP6",
-                "stepName": "Submit Form: reservations.pl_3",
+                "stepName": "Custom Request: InfluxDB",
                 "infFile": "t6.inf",
-                "time": 1617540059981
+                "time": 1617930035208
+            },
+            {
+                "stepId": "STEP7",
+                "stepName": "Submit Data: reservations.pl",
+                "infFile": "t7.inf",
+                "time": 1617930039421
+            },
+            {
+                "stepId": "STEP8",
+                "stepName": "Custom Request: InfluxDB",
+                "infFile": "t8.inf",
+                "time": 1617930039444
+            },
+            {
+                "stepId": "STEP9",
+                "stepName": "Submit Data: reservations.pl_5",
+                "infFile": "t9.inf",
+                "time": 1617930043629
+            },
+            {
+                "stepId": "STEP10",
+                "stepName": "Custom Request: InfluxDB",
+                "infFile": "t10.inf",
+                "time": 1617930043652
+            },
+            {
+                "stepId": "STEP11",
+                "stepName": "Submit Data: reservations.pl_6",
+                "infFile": "t11.inf",
+                "time": 1617930047851
+            },
+            {
+                "stepId": "STEP12",
+                "stepName": "Custom Request: InfluxDB",
+                "infFile": "t12.inf",
+                "time": 1617930047875
+            },
+            {
+                "stepId": "STEP13",
+                "stepName": "Url: Itinerary Button",
+                "infFile": "t13.inf",
+                "time": 1617930052233
+            },
+            {
+                "stepId": "STEP14",
+                "stepName": "Custom Request: InfluxDB",
+                "infFile": "t14.inf",
+                "time": 1617930052256
+            },
+            {
+                "stepId": "STEP15",
+                "stepName": "Url: SignOff Button",
+                "infFile": "t15.inf",
+                "time": 1617930056586
+            },
+            {
+                "stepId": "STEP16",
+                "stepName": "Custom Request: InfluxDB",
+                "infFile": "t16.inf",
+                "time": 1617930056611
             }
         ],
-        "transactions": []
+        "transactions": [
+            {
+                "transactionName": "01.Enter_WebTours",
+                "rawStartTime": 1617930026025,
+                "rawEndTime": 1617930026450,
+                "thinkTime": 0.0,
+                "wastedTime": 0.17331695556640626
+            },
+            {
+                "transactionName": "02.Login",
+                "rawStartTime": 1617930030492,
+                "rawEndTime": 1617930030794,
+                "thinkTime": 0.0,
+                "wastedTime": 0.010458707809448243
+            },
+            {
+                "transactionName": "03.Choice_City",
+                "rawStartTime": 1617930034843,
+                "rawEndTime": 1617930035184,
+                "thinkTime": 0.0,
+                "wastedTime": 0.010558843612670899
+            },
+            {
+                "transactionName": "04.Choice_Flight",
+                "rawStartTime": 1617930039222,
+                "rawEndTime": 1617930039421,
+                "thinkTime": 0.0,
+                "wastedTime": 0.006676912307739258
+            },
+            {
+                "transactionName": "05.Choice_Flight",
+                "rawStartTime": 1617930043449,
+                "rawEndTime": 1617930043630,
+                "thinkTime": 0.0,
+                "wastedTime": 0.0063266754150390629
+            },
+            {
+                "transactionName": "06.End_Booking",
+                "rawStartTime": 1617930047661,
+                "rawEndTime": 1617930047851,
+                "thinkTime": 0.0,
+                "wastedTime": 0.007170915603637695
+            },
+            {
+                "transactionName": "07.Itinerary",
+                "rawStartTime": 1617930051898,
+                "rawEndTime": 1617930052234,
+                "thinkTime": 0.0,
+                "wastedTime": 0.011850118637084961
+            },
+            {
+                "transactionName": "08.Log_Out",
+                "rawStartTime": 1617930056280,
+                "rawEndTime": 1617930056586,
+                "thinkTime": 0.0,
+                "wastedTime": 0.007687807083129883
+            }
+        ]
     }
 ]

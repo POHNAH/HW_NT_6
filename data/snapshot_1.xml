@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <HTTPSnapshot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="1">
-  <HTTPTask id="14" hostname="localhost:1080" path="/webtours/" url="http://localhost:1080/webtours/" ip="127.0.0.1" port="1080" connectionId="1" origin="Primary" frame="1" startDateTime="2021-04-02T00:59:48.899+03:00" startTime="217018296" endTime="217018312">
+  <HTTPTask id="14" hostname="localhost:1080" path="/webtours/" url="http://localhost:1080/webtours/" ip="127.0.0.1" port="1080" connectionId="1" origin="Primary" frame="1" startDateTime="2021-04-09T03:50:15.642+03:00" startTime="217018296" endTime="217018312">
     <HTTPRequest method="GET">
       <HTTPHeaders>
         <HTTPHeaderEntity name="Accept" index="0">
@@ -157,7 +157,7 @@
         <PacketInfo time="217018312" offset="0" length="865" />
       </TcpPackets>
     </HTTPResponse>
-    <HTTPTask id="25" hostname="localhost:1080" path="/webtours/header.html" url="http://localhost:1080/webtours/header.html" ip="127.0.0.1" port="1080" connectionId="1" origin="HTML" frame="1.1" startDateTime="2021-04-02T00:59:48.920+03:00" startTime="217019609" endTime="217019625">
+    <HTTPTask id="25" hostname="localhost:1080" path="/webtours/header.html" url="http://localhost:1080/webtours/header.html" ip="127.0.0.1" port="1080" connectionId="1" origin="HTML" frame="1.1" startDateTime="2021-04-09T03:50:15.660+03:00" startTime="217019609" endTime="217019625">
       <HTTPRequest method="GET">
         <HTTPHeaders>
           <HTTPHeaderEntity name="Accept" index="0">
@@ -323,7 +323,7 @@
         </TcpPackets>
       </HTTPResponse>
     </HTTPTask>
-    <HTTPTask id="33" hostname="localhost:1080" path="/webtours/images/hp_logo.png" url="http://localhost:1080/webtours/images/hp_logo.png" ip="127.0.0.1" port="1080" connectionId="3" origin="HTML" frame="1" startDateTime="2021-04-02T00:59:48.929+03:00" startTime="217019828" endTime="217019843">
+    <HTTPTask id="33" hostname="localhost:1080" path="/webtours/images/hp_logo.png" url="http://localhost:1080/webtours/images/hp_logo.png" ip="127.0.0.1" port="1080" connectionId="3" origin="HTML" frame="1" startDateTime="2021-04-09T03:50:15.668+03:00" startTime="217019828" endTime="217019843">
       <HTTPRequest method="GET">
         <HTTPHeaders>
           <HTTPHeaderEntity name="Accept" index="0">
@@ -489,7 +489,7 @@
         </TcpPackets>
       </HTTPResponse>
     </HTTPTask>
-    <HTTPTask id="35" hostname="localhost:1080" path="/webtours/images/webtours.png" url="http://localhost:1080/webtours/images/webtours.png" ip="127.0.0.1" port="1080" connectionId="4" origin="HTML" frame="1" startDateTime="2021-04-02T00:59:48.938+03:00" startTime="217019828" endTime="217019859">
+    <HTTPTask id="35" hostname="localhost:1080" path="/webtours/images/webtours.png" url="http://localhost:1080/webtours/images/webtours.png" ip="127.0.0.1" port="1080" connectionId="4" origin="HTML" frame="1" startDateTime="2021-04-09T03:50:15.674+03:00" startTime="217019828" endTime="217019859">
       <HTTPRequest method="GET">
         <HTTPHeaders>
           <HTTPHeaderEntity name="Accept" index="0">
@@ -655,7 +655,7 @@
         </TcpPackets>
       </HTTPResponse>
     </HTTPTask>
-    <HTTPTask id="37" hostname="localhost:1080" path="/cgi-bin/welcome.pl?signOff=true" url="http://localhost:1080/cgi-bin/welcome.pl?signOff=true" ip="127.0.0.1" port="1080" connectionId="1" origin="HTML" frame="1.2" startDateTime="2021-04-02T00:59:48.947+03:00" startTime="217019750" endTime="217020109">
+    <HTTPTask id="37" hostname="localhost:1080" path="/cgi-bin/welcome.pl?signOff=true" url="http://localhost:1080/cgi-bin/welcome.pl?signOff=true" ip="127.0.0.1" port="1080" connectionId="1" origin="HTML" frame="1.2" startDateTime="2021-04-09T03:50:15.682+03:00" startTime="217019750" endTime="217020109">
       <QueryString>
         <HTTPDataSet>
           <HTTPData dataFilePath="" dfeDataType="Raw" sectionDataType="1">
@@ -830,7 +830,7 @@
           <PacketInfo time="217020109" offset="0" length="1246" />
         </TcpPackets>
       </HTTPResponse>
-      <HTTPTask id="47" hostname="localhost:1080" path="/WebTours/home.html" url="http://localhost:1080/WebTours/home.html" ip="127.0.0.1" port="1080" connectionId="4" origin="HTML" frame="1.2.2" startDateTime="2021-04-02T00:59:48.961+03:00" startTime="217020687" endTime="217020703">
+      <HTTPTask id="47" hostname="localhost:1080" path="/WebTours/home.html" url="http://localhost:1080/WebTours/home.html" ip="127.0.0.1" port="1080" connectionId="4" origin="HTML" frame="1.2.2" startDateTime="2021-04-09T03:50:15.695+03:00" startTime="217020687" endTime="217020703">
         <HTTPRequest method="GET">
           <HTTPHeaders>
             <HTTPHeaderEntity name="Accept" index="0">
@@ -1014,7 +1014,7 @@
           </TcpPackets>
         </HTTPResponse>
       </HTTPTask>
-      <HTTPTask id="53" hostname="localhost:1080" path="/cgi-bin/nav.pl?in=home" url="http://localhost:1080/cgi-bin/nav.pl?in=home" ip="127.0.0.1" port="1080" connectionId="1" origin="HTML" frame="1.2.1" startDateTime="2021-04-02T00:59:48.974+03:00" startTime="217020625" endTime="217020906">
+      <HTTPTask id="53" hostname="localhost:1080" path="/cgi-bin/nav.pl?in=home" url="http://localhost:1080/cgi-bin/nav.pl?in=home" ip="127.0.0.1" port="1080" connectionId="1" origin="HTML" frame="1.2.1" startDateTime="2021-04-09T03:50:15.706+03:00" startTime="217020625" endTime="217020906">
         <QueryString>
           <HTTPDataSet>
             <HTTPData dataFilePath="" dfeDataType="Raw" sectionDataType="1">
@@ -1201,7 +1201,7 @@
         </HTTPResponse>
       </HTTPTask>
     </HTTPTask>
-    <HTTPTask id="55" hostname="localhost:1080" path="/WebTours/images/mer_login.gif" url="http://localhost:1080/WebTours/images/mer_login.gif" ip="127.0.0.1" port="1080" connectionId="1" origin="HTML" frame="1" startDateTime="2021-04-02T00:59:48.985+03:00" startTime="217020953" endTime="217020984">
+    <HTTPTask id="55" hostname="localhost:1080" path="/WebTours/images/mer_login.gif" url="http://localhost:1080/WebTours/images/mer_login.gif" ip="127.0.0.1" port="1080" connectionId="1" origin="HTML" frame="1" startDateTime="2021-04-09T03:50:15.717+03:00" startTime="217020953" endTime="217020984">
       <HTTPRequest method="GET">
         <HTTPHeaders>
           <HTTPHeaderEntity name="Accept" index="0">
@@ -1385,7 +1385,7 @@
         </TcpPackets>
       </HTTPResponse>
     </HTTPTask>
-    <HTTPTask id="57" hostname="localhost:1080" path="/favicon.ico" url="http://localhost:1080/favicon.ico" ip="127.0.0.1" port="1080" connectionId="1" origin="HTML" frame="1" startDateTime="2021-04-02T00:59:48.994+03:00" startTime="217021328" endTime="217021343">
+    <HTTPTask id="57" hostname="localhost:1080" path="/favicon.ico" url="http://localhost:1080/favicon.ico" ip="127.0.0.1" port="1080" connectionId="1" origin="HTML" frame="1" startDateTime="2021-04-09T03:50:15.725+03:00" startTime="217021328" endTime="217021343">
       <HTTPRequest method="GET">
         <HTTPHeaders>
           <HTTPHeaderEntity name="Accept" index="0">

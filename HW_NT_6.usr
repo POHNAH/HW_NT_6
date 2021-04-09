@@ -51,8 +51,8 @@ vuser_end=0
 [Replayed Actions]
 vuser_init=1
 createTicket=1
-logic=0
-toItinerary=0
+logic=1
+toItinerary=1
 vuser_end=1
 [Interpreters]
 vuser_init=cci
@@ -61,17 +61,9 @@ logic=cci
 toItinerary=cci
 vuser_end=cci
 [TransactionsOrder]
-Order="createTicket_4__*delimiter*__createTicket_2__*delimiter*__createTicket_3__*delimiter*__createTicket_4__*delimiter*__createTicket_2__*delimiter*__createTicket_3__*delimiter*__createTicket_1__*delimiter*__enter__*delimiter*__toItinerary__*delimiter*__exit"
+Order=
 [StateManagement]
 LastReplayStatus=1
 [ActiveReplay]
 LastReplayedRunName=result1
 ActiveRunName=result1
-[Transactions]
-createTicket_4=
-createTicket_2=
-createTicket_3=
-createTicket_1=
-enter=
-toItinerary=
-exit=

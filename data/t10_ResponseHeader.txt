@@ -1,9 +1,10 @@
 HTTP/1.1 200 OK
-Cache-Control: max-age=0, private
-Content-Length: 187
-Content-Type: application/json; charset=utf-8
-Server: Microsoft-HTTPAPI/2.0
-X-SmartScreen-Flight-Vector: enableProxyLeniency,IsArsFmsIntegrationEnabled,IsCurfId0LoggingEnabled,isCurfTstEnabled,isNpPIOverrideBlockEnabled,npSettings2004,SrcEOPEnabled,topTrafficV2Enabled,UpdateOnMissingEtagEnabled,updateSigningCert
-Date: Fri, 02 Apr 2021 01:03:49 GMT
-Connection: close
+Date: Fri, 09 Apr 2021 00:49:21 GMT
+Server: Apache/2.2.21 (Win32)
+Expires: 5s
+Set-Cookie: MTUserInfo=firstName&Jojo&address2&&username&jojo&hash&47&lastName&Bean%0A&address1&&creditCard&&expDate&%0A; path=/
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=ISO-8859-1
 

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <HTTPSnapshot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="6">
-  <HTTPTask id="177" hostname="localhost:1080" path="/cgi-bin/reservations.pl" url="http://localhost:1080/cgi-bin/reservations.pl" ip="127.0.0.1" port="1080" connectionId="26" origin="Primary" frame="1" startDateTime="2021-04-02T00:59:49.178+03:00" startTime="217123375" endTime="217123500">
+  <HTTPTask id="177" hostname="localhost:1080" path="/cgi-bin/reservations.pl" url="http://localhost:1080/cgi-bin/reservations.pl" ip="127.0.0.1" port="1080" connectionId="26" origin="Primary" frame="1" startDateTime="2021-04-09T03:50:15.939+03:00" startTime="217123375" endTime="217123500">
     <HTTPRequest method="POST">
       <HTTPHeaders>
         <HTTPHeaderEntity name="Accept" index="0">
@@ -215,7 +215,7 @@
         <PacketInfo time="217123500" offset="0" length="3041" />
       </TcpPackets>
     </HTTPResponse>
-    <HTTPTask id="179" hostname="localhost:1080" path="/WebTours/images/bookanother.gif" url="http://localhost:1080/WebTours/images/bookanother.gif" ip="127.0.0.1" port="1080" connectionId="27" origin="HTML" frame="1" startDateTime="2021-04-02T00:59:49.197+03:00" startTime="217123531" endTime="217123546">
+    <HTTPTask id="179" hostname="localhost:1080" path="/WebTours/images/bookanother.gif" url="http://localhost:1080/WebTours/images/bookanother.gif" ip="127.0.0.1" port="1080" connectionId="27" origin="HTML" frame="1" startDateTime="2021-04-09T03:50:15.958+03:00" startTime="217123531" endTime="217123546">
       <HTTPRequest method="GET">
         <HTTPHeaders>
           <HTTPHeaderEntity name="Accept" index="0">

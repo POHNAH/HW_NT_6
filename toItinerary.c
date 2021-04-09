@@ -1,6 +1,9 @@
 toItinerary()
 {
-	web_url("Itinerary Button", 
+	tName = "07.Itinerary";
+	lr_start_transaction(tName);
+	
+	status = web_url("Itinerary Button", 
 		"URL=http://localhost:1080/cgi-bin/welcome.pl?page=itinerary", 
 		"TargetFrame=body", 
 		"Resource=0", 
@@ -9,6 +12,9 @@ toItinerary()
 		"Snapshot=t7.inf", 
 		"Mode=HTML", 
 		LAST);
+
+	end_transaction(tName, status);
+	lr_think_time(4);
 
 	return 0;
 }
