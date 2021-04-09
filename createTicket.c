@@ -1,6 +1,7 @@
 createTicket()
 {
 	int randomNumber = rand()%2;
+	lr_start_transaction("createTicket_1");
 
 	web_url("welcome.pl", 
 		"URL=http://localhost:1080/cgi-bin/welcome.pl?page=search", 
@@ -11,14 +12,18 @@ createTicket()
 		"Mode=HTML", 
 		LAST);
 
-	lr_save_string(lr_eval_string("{city}"),"city1");
-	lr_output_message(lr_eval_string("{city1}"));
-	lr_save_string(lr_eval_string("{city}"),"city2");
-	lr_output_message(lr_eval_string("{city2}"));
-	lr_output_message(lr_eval_string("{seatPref}"));
-	lr_output_message(lr_eval_string("{seatType}"));
+	lr_end_transaction("createTicket_1");
+	lr_think_time(4);
+
+//	lr_save_string(lr_eval_string("{city}"),"city1");
+//	lr_output_message(lr_eval_string("{city1}"));
+//	lr_save_string(lr_eval_string("{city}"),"city2");
+//	lr_output_message(lr_eval_string("{city2}"));
+//	lr_output_message(lr_eval_string("{seatPref}"));
+//	lr_output_message(lr_eval_string("{seatType}"));
 	
 	if (randomNumber == 0) {
+		lr_start_transaction("createTicket_2");
 		web_reg_save_param_ex(
 		    "ParamName=outFlight", 
 		    "LB/IC=name=\"outboundFlight\" value=\"",
@@ -28,9 +33,9 @@ createTicket()
 		web_submit_form("reservations.pl", 
 			"Snapshot=t4.inf", 
 			ITEMDATA, 
-			"Name=depart", "Value={city1}", ENDITEM, 
+			"Name=depart", "Value={city}", ENDITEM, 
 			"Name=departDate", "Value={date1}", ENDITEM, 
-			"Name=arrive", "Value={city2}", ENDITEM, 
+			"Name=arrive", "Value={city}", ENDITEM, 
 			"Name=returnDate", "Value={date2}", ENDITEM, 
 			"Name=numPassengers", "Value=1", ENDITEM, 
 			"Name=roundtrip", "Value=<OFF>", ENDITEM, 
@@ -40,8 +45,13 @@ createTicket()
 			"Name=findFlights.y", "Value=11", ENDITEM, 
 			LAST);
 		
+		lr_end_transaction("createTicket_2");
+		lr_think_time(4);
+		
+		lr_start_transaction("createTicket_3");
+
 		lr_save_string(lr_eval_string(lr_paramarr_random("outFlight")),"randomTicket");
-		lr_output_message(lr_eval_string("{randomTicket}"));
+//		lr_output_message(lr_eval_string("{randomTicket}"));
 	
 		web_submit_form("reservations.pl_2", 
 			"Snapshot=t5.inf", 
@@ -51,10 +61,14 @@ createTicket()
 			"Name=reserveFlights.y", "Value=10", ENDITEM, 
 			LAST);
 	
-		lr_output_message(lr_eval_string("{fName}"));
-		lr_output_message(lr_eval_string("{sName}"));
-		lr_output_message("Adress %s, %s", lr_eval_string("{adress}"),lr_eval_string("{home}"));
-		lr_output_message("Credit card %s, %s", lr_eval_string("{cCard}"),lr_eval_string("{cDate}"));
+		lr_end_transaction("createTicket_3");
+		lr_think_time(4);
+		
+		lr_start_transaction("createTicket_4");
+//		lr_output_message(lr_eval_string("{fName}"));
+//		lr_output_message(lr_eval_string("{sName}"));
+//		lr_output_message("Adress %s, %s", lr_eval_string("{adress}"),lr_eval_string("{home}"));
+//		lr_output_message("Credit card %s, %s", lr_eval_string("{cCard}"),lr_eval_string("{cDate}"));
 	
 		web_submit_form("reservations.pl_3", 
 			"Snapshot=t6.inf", 
@@ -71,8 +85,11 @@ createTicket()
 			"Name=buyFlights.y", "Value=14", ENDITEM, 
 			LAST);
 	
+		lr_end_transaction("createTicket_4");
+		lr_think_time(4);
 	}
 	else {
+		lr_start_transaction("createTicket_2");
 		web_reg_save_param_ex(
 		    "ParamName=outFlight", 
 		    "LB/IC=name=\"outboundFlight\" value=\"",
@@ -88,9 +105,9 @@ createTicket()
 		web_submit_form("reservations.pl", 
 			"Snapshot=t4.inf", 
 			ITEMDATA, 
-			"Name=depart", "Value={city1}", ENDITEM, 
+			"Name=depart", "Value={city}", ENDITEM, 
 			"Name=departDate", "Value={date1}", ENDITEM, 
-			"Name=arrive", "Value={city2}", ENDITEM, 
+			"Name=arrive", "Value={city}", ENDITEM, 
 			"Name=returnDate", "Value={date2}", ENDITEM, 
 			"Name=numPassengers", "Value=1", ENDITEM, 
 			"Name=roundtrip", "Value=on", ENDITEM, 
@@ -100,10 +117,15 @@ createTicket()
 			"Name=findFlights.y", "Value=11", ENDITEM, 
 			LAST);
 		
+		lr_end_transaction("createTicket_2");
+		lr_think_time(4);
+		
+		lr_start_transaction("createTicket_3");
+
 		lr_save_string(lr_eval_string(lr_paramarr_random("outFlight")),"randomTicket1");
-		lr_output_message(lr_eval_string("{randomTicket1}"));
+//		lr_output_message(lr_eval_string("{randomTicket1}"));
 		lr_save_string(lr_eval_string(lr_paramarr_random("returnFlight")),"randomTicket2");
-		lr_output_message(lr_eval_string("{randomTicket2}"));
+//		lr_output_message(lr_eval_string("{randomTicket2}"));
 	
 		web_submit_form("reservations.pl_2", 
 			"Snapshot=t5.inf", 
@@ -114,11 +136,16 @@ createTicket()
 			"Name=reserveFlights.y", "Value=10", ENDITEM, 
 			LAST);
 	
-		lr_output_message(lr_eval_string("{fName}"));
-		lr_output_message(lr_eval_string("{sName}"));
-		lr_output_message("Adress %s, %s", lr_eval_string("{adress}"),lr_eval_string("{home}"));
-		lr_output_message("Credit card %s, %s", lr_eval_string("{cCard}"),lr_eval_string("{cDate}"));
-	
+		lr_end_transaction("createTicket_3");
+		lr_think_time(4);
+		
+		lr_start_transaction("createTicket_4");
+
+//		lr_output_message(lr_eval_string("{fName}"));
+//		lr_output_message(lr_eval_string("{sName}"));
+//		lr_output_message("Adress %s, %s", lr_eval_string("{adress}"),lr_eval_string("{home}"));
+//		lr_output_message("Credit card %s, %s", lr_eval_string("{cCard}"),lr_eval_string("{cDate}"));
+//	
 		web_submit_form("reservations.pl_3", 
 			"Snapshot=t6.inf", 
 			ITEMDATA, 
@@ -133,6 +160,9 @@ createTicket()
 			"Name=buyFlights.x", "Value=49", ENDITEM, 
 			"Name=buyFlights.y", "Value=14", ENDITEM, 
 			LAST);
+
+		lr_end_transaction("createTicket_4");
+		lr_think_time(4);
 	}
 	
 	return 0;

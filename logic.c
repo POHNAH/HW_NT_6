@@ -7,12 +7,7 @@ logic()
 	lr_end_transaction("enter");
 	lr_think_time(4);
 	
-	lr_start_transaction("createTicket");
-	
 	createTicket();
-	
-	lr_end_transaction("createTicket");
-	lr_think_time(4);
 	
 	lr_start_transaction("toItinerary");
 	
